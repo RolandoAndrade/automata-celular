@@ -6,6 +6,16 @@ const HEIGHT=600;
 let DIMENSIONS=20;
 let SQUARE_WIDTH=WIDTH/DIMENSIONS;
 let SQUARE_BORDER=1;
-let drawing=false;
+
+
+let actualColor=0.1;
+
+function changeColor(color)
+{
+    actualColor = color;
+}
+
+
+
 
 new Board();

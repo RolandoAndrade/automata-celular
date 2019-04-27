@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Juego de la vida</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .canvas
+        {
+            margin: 10px auto;
+            display: block;
+        }
+        .button
+        {
+            padding: 15px;
+            border: none;
+            color: #fff;
+        }
+        .button.y
+        {
+            background: #fff156;
+        }
+        .button.g
+        {
+            background: #00ff7b;
+        }
+        .button.b
+        {
+            background: #6bb9ff;
+        }
+        .button.r
+        {
+            background: #ff5a4d;
+        }
+    </style>
 </head>
 <body>
+
     <canvas class="canvas" id="canvas" width="600" height="600"></canvas>
+    <button class="button y" onclick="changeColor(0.1)">Amarillo</button>
+    <button class="button g" onclick="changeColor(0.3)">Verde</button>
+    <button class="button b" onclick="changeColor(0.5)">Azul</button>
+    <button class="button r" onclick="changeColor(0.8)">Rojo</button>
+    <button class="button" onclick="start()">Empezar</button>
     <script src="js/shapes.js"></script>
     <script src="js/cells.js"></script>
     <script src="js/board.js"></script>

@@ -6,7 +6,8 @@ class Cell
     {
         this.square = new Rectangle(x * SQUARE_WIDTH + SQUARE_BORDER, y * SQUARE_WIDTH + SQUARE_BORDER,
             SQUARE_WIDTH - 2 * SQUARE_BORDER, SQUARE_WIDTH - 2 * SQUARE_BORDER, CELLS_COLOR[0]);
-        this.setColor(value)
+        this.setColor(value);
+        this.draw();
     }
 
     setColor(count)
@@ -26,7 +27,7 @@ class Cell
             this.value = 0.3;
             this.number = 2;
         }
-        else if (count < 0.7)
+        else if (count < 0.8)
         {
             this.value = 0.5;
             this.number = 3;
