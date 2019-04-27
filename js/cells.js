@@ -12,7 +12,7 @@ class Cell
 
     setColor(count)
     {
-        if(count < 0.1)
+        if(count===0)
         {
             this.number = 0;
             this.value = 0;
